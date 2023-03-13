@@ -1,0 +1,320 @@
+.button, input.submit, input.button, button {
+	background:#FFF url(../../../../skins/islander/img/bg_buttonSubmit.png) repeat-x bottom right;
+}
+#pageEdit .btn_edit{
+	background:url(../../../../skins/islander/img/btn_edit2.png) no-repeat top;
+}
+#pageEdit a.btn_editLock{
+	background:url(../../../../skins/islander/img/btn_editLock.png) no-repeat top;
+}
+.panel .open .panelControl{
+	background:transparent url(../../../../skins/islander/img/btn_panelOpen.png) no-repeat center left;
+}
+.panel .close .panelControl{
+	background:transparent url(../../../../skins/islander/img/btn_panelClose.png) no-repeat center left;
+}
+#navigationGrippy {
+	background: url(../../../../skins/islander/img/bg_navGrippy.png) 50% 4px no-repeat;
+}
+.vscrollerbasebeg {
+	background: url(../../../../skins/islander/img/bg_arrows.png) 50% -22px no-repeat;
+}
+.vscrollerbaseend {
+	background: url(../../../../skins/islander/img/bg_arrows.png) 50% 0px no-repeat;
+}
+#comments .commentTotalReplies {
+	background:transparent url(../../../../skins/islander/img/bg_headerTable.png) repeat-x top;
+}
+.tableList tr.header {
+	background:transparent url(../../../../skins/islander/img/bg_headerTable.png) repeat-x top;
+}
+.tableList tr.header th span.orderBy div.notActive {
+	background:transparent url(../../../../skins/islander/img/bg_arrows.png) no-repeat 50% 0px;
+}
+.tableList tr.header th span.orderBy div.asc {
+	background:transparent url(../../../../skins/islander/img/bg_arrows.png) no-repeat  50% 100%;
+}
+.tableList tr.header th span.orderBy div.desc {
+	background:transparent url(../../../../skins/islander/img/bg_arrows.png) no-repeat 50% 0%;
+}
+.treeList div.noKids{
+	background:transparent url(../../../../skins/islander/img/bg_arrows.png) no-repeat 50% 0px;
+}
+.treeList div.open{
+	background:transparent url(../../../../skins/islander/img/bg_arrows.png) no-repeat 50% .6em;
+}
+.treeList div.close{
+	background:transparent url(../../../../skins/islander/img/bg_arrows.png) no-repeat .3em 50%;
+}
+.treeList div.close{
+	background:transparent url(../../../../skins/islander/img/bg_arrows.png) no-repeat .3em 50%;
+}
+.dialogTitleGrip { 
+	background:url(../../../../skins/islander/img/bg_dialogGrippy.png);
+}
+	* html .dialogTitleGrip {
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../../skins/islander/img/bg_dialogGrippy.png', sizingMethod='crop');
+}
+.dialogContent{
+	background:#FFF url(../../../../skins/islander/img/bg_dialogGradient.png) no-repeat top right;
+}
+.toggleMin .control a, .toggleMax .control a{display:block; padding-left:10px; background:transparent url(../../../../skins/islander/img/btn_panelOpen.png) no-repeat center left;}
+.toggleMin .control a{background-image:url(../../../../skins/islander/img/btn_panelOpen.png);}
+.toggleMax .control a{background-image:url(../../../../skins/islander/img/btn_panelClose.png);}
+h1, h2, h3	{color:#EDCA88;}
+body		{background: #000; color:#FFF}
+a:link, a:visited 	{color:#78AADD;}
+a:link:hover, a:visited:hover {color:#DE590A;}
+
+
+#title{font-size:240%; line-height:1.8em;}
+#title a, #title a:hover {color:#EDCA88; /* text-transform:uppercase */}
+
+#allcontent{
+	background:transparent none;
+}
+
+#pageContent{
+	background:#000 none;
+	border-color:#999;
+}
+.tabNavigation {
+	border-color:#666;
+}
+.tabNavigation li {
+	border-color:#666;
+	background-color:#222222;
+}
+.tabNavigation li.selected {
+	background-color:#000;
+}
+.announcement{
+	background-color:#222222;
+	border:1px solid #444;
+}
+#footer{color:#BBB;}
+
+#pageControl{
+	color:#FFF;
+}
+#pageAttributes {
+	border-color:#CCC;
+	background-color:#3F3F3F;
+}
+
+#skin_form .selected {
+	background-color:#434949;
+}
+
+
+ 
+.panel .panelHeader{
+	background-color:#000;
+	color:#EDCA88;
+	line-height:1.5em;
+	font-size:0.8em;
+	text-transform:uppercase;
+	border-bottom: 1px solid #666;
+	margin-bottom:-1px;
+}
+.panel .panelContent{
+	background-color:transparent;
+	color:#FFF;
+}
+.panelContent a, .panelContent a:link, .panelContent a:visited {color:#78AADD;}
+.panel{border-color:#666;}
+
+#leftColumn .panel, #leftColumn .panel .panelHeader{
+	border-color:#999;
+}
+#leftColumn .panel .panelContent{
+	display:inline-block;
+	background: transparent url(../../../../skins/islander/img/bg_panelContent.png);
+}
+* html #leftColumn .panel .panelContent{
+	background: transparent none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../../../skins/islander/img/bg_panelContent.png', sizingMethod='scale'); 
+}
+#siteTagCloud a{color:#FFF; border:solid 1px #333}
+#siteTagCloud a:hover{color:#FFF; text-decoration:none; background-color #333; border:solid 1px #666}
+
+#navigationGrippy {
+	border-color:#999;
+}
+
+#pageContent .wetpaintPanel hr{border-color:#555}
+
+#pageContent .wetpaintPanel {
+	border:1px solid #333;
+}
+#pageContent .wetpaintPanel .panelHeader {
+	color:#469B26;
+	background:#444444 none;
+}
+
+#pageContent .wetpaintPanel .panelContent {
+	color:#AAA;
+	background: #282828 url(../../../../img/bg/bg_panelContent_wetpaint_dark.png) repeat-x left top;
+}
+#pageContent .wetpaintPanel h4 {
+	color:#999;
+}
+#pageContent .wetpaintPanel .callout {
+	border:1px solid #555;
+	background-color:#232323;
+}
+
+.vscrollerbarbeg {
+	border:1px solid #CCC;
+	width:7px;
+	background-color:#3F3F3F;
+}
+.vscrollerbase {
+	border-left:1px solid #999;
+}
+
+.treeList .current{
+	background-color:#333;
+}
+.treeList li div.hover, .treeList li div.close:hover, .treeList li div.open:hover{
+	background-color:#333;
+}
+.treeList li div.open,
+.treeList li div.close {
+	border-bottom: 0px;
+}
+.treeList li a:hover{
+	background-color:#333;
+}
+
+
+.pageSection {
+	border-top: 1px solid #666;
+}
+.controlsNode, #comments, 
+#comments .date,
+#comments, #comments blockquote,
+.date,
+#pageAttribute,
+.myAccountItem {color:#CCC}
+
+
+#comments li span.commentSubject, #comments li span.commentText{
+	color:#FFF;
+}
+#comments .commentTotalReplies {
+margin-top:1em;
+	background:transparent none;
+	border-top:1px solid #666;
+}
+
+
+#searchResults .exactMatch {background-color:transparent;}
+
+#searchResults .resultData,
+#searchResults .resultAuthor, 
+#pageEdit #editMessage,
+.revisionsKey{color:#FFF}
+
+#searchResults .resultData{color:#DDD}
+.resultContent,#resultCount span,
+#resultsPerPage,
+#searchResults .resultData a,
+#searchResults .resultAuthor,
+div#pageTags a.pageTag,
+div#pageTags a:visited.pageTag,
+.revisionsKey{color:#CCC}
+
+#resultsPerPage select,
+span.highlight,
+a span.highlight{color:#000}
+
+
+
+.dialogTitleDiv,
+.dialogBodyOuter{
+	border-color: #759AD8 #1D356D #3159B7 #4B689D;
+	background-color:#4B74D0;
+}
+
+.dialogInner{
+	color:#FFFFFF;
+}
+.dialogContent{
+	background-color:#000000;
+		color:#FFFFFF;
+}
+.dialogContent .panel .panelHeader{
+	text-transform:none;
+}
+.button, input.submit, input.button, button {
+	color:#FFF;
+	background-color:#323232;
+	
+	*color:#333;
+	*background:#FFF none;
+}
+
+#siteSearch input.submit, #siteSearch2 input.submit {
+	background-color:transparent !important;
+}
+.dialogBreadcrumbs {
+	border-bottom:1px dotted #FFF; 
+	background-color:transparent;
+}
+.dialogContent .selectListMultipleOptionSelected {
+	color:#000;
+	background-color:#9DC1BD;
+}
+.dialogContent .subWindow,
+.dialogContent .selectListMultiple {
+	color:#000;
+}
+.dialogContent .subWindow a, .dialogContent .subWindow a:link, .dialogContent .subWindow a:visited,
+.dialogContent .selectListMultiple a, .dialogContent .selectListMultiple a:link, .dialogContent .selectListMultiple a:visited, .dialogContent .selectListMultiple option  {
+	color:#00F;
+}
+.dialogContent .selectListMultipleOption {color:#000}
+
+
+.tableList table{border-bottom:solid 1px #333; background-color:#000}
+.tableList td.header, .tableList th {text-transform:uppercase; color:#EDCA88;}
+.tableList td.header a, .tableList td.header a:link, .tableList td.header a:visited,
+.tableList th a, .tableList th a:link, .tableList th a:visited,
+.tableList .commentTitleCell a, .tableList .commentTitleCell a:link, .tableList .commentTitleCell a:visited {color:#78AADD}
+
+.tableList tr.altRow {
+	background-color:#222;
+}
+.diffAdd{color:#EDCA88}
+
+.ulList ul li.altRow {
+	background-color:#222;
+}
+
+
+.editableArea {
+	background-color:#000;
+	color:#FFF;
+}
+.wikiWrapper table.wp-border-cols td,
+#wikiEditor.wikiWrapper table.wp-border-cols td {
+	border-color: #666;
+}
+.wikiWrapper table.wp-border-rows td,
+#wikiEditor.wikiWrapper table.wp-border-rows td {
+	border-color: #666;
+}
+.wikiWrapper table.wp-border-all td,
+#wikiEditor.wikiWrapper table.wp-border-all td {
+	border-color: #666;
+}
+#wikiEditor a {
+	background-color:#999;
+}
+#wikiEditor.wikiWrapper .wp-field {
+	background-color:#999;
+}
+.overlay {
+	background-color:#666;
+}
