@@ -1,0 +1,349 @@
+/*
+  Mechthild Harkness archive — shared stylesheet
+  A quiet, theatrical redesign of the site rescued from wetpaint wiki.
+  Single stylesheet, no build step, no JS required — this site is a
+  historical archive, not a maintained app, so it stays as plain as
+  it can while still looking cared for.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+	--stage: #16110f;
+	--stage-edge: #2a1e19;
+	--curtain: #7a1f2b;
+	--curtain-bright: #a3283a;
+	--gold: #c9a24b;
+	--gold-soft: #e4cf9c;
+	--paper: #f6f0e4;
+	--paper-dim: #ece3d0;
+	--ink: #241c18;
+	--ink-soft: #55483d;
+	--rule: #d9cbb0;
+	--max-width: 46rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: var(--stage);
+	color: var(--ink);
+	font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+	line-height: 1.65;
+}
+
+h1, h2, h3, .kicker, .nav-list a {
+	font-family: "Playfair Display", Georgia, serif;
+}
+
+a {
+	color: var(--curtain);
+}
+
+a:hover, a:focus {
+	color: var(--curtain-bright);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.skip-link {
+	position: absolute;
+	left: -999px;
+	top: 0;
+	background: var(--gold);
+	color: var(--stage);
+	padding: 0.6em 1em;
+	z-index: 100;
+	font-weight: 600;
+}
+
+.skip-link:focus {
+	left: 0.5em;
+	top: 0.5em;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+	background: var(--stage);
+	background-image: linear-gradient(180deg, var(--stage-edge), var(--stage) 70%);
+	border-bottom: 3px solid var(--gold);
+	padding: 2rem 1.25rem 1.5rem;
+	text-align: center;
+}
+
+.site-header-inner {
+	max-width: 60rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.9rem;
+}
+
+.site-logo {
+	display: block;
+	border-radius: 50%;
+	line-height: 0;
+}
+
+.site-logo img {
+	width: 108px;
+	height: 108px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid var(--gold);
+	box-shadow: 0 0 0 5px var(--stage), 0 0 0 6px var(--stage-edge);
+}
+
+.kicker {
+	margin: 0;
+	color: var(--gold-soft);
+	text-transform: uppercase;
+	letter-spacing: 0.22em;
+	font-size: 0.72rem;
+	font-weight: 600;
+}
+
+.site-title {
+	margin: 0;
+	color: var(--paper);
+	font-size: clamp(1.7rem, 4vw, 2.5rem);
+	font-weight: 700;
+}
+
+.site-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* ---------- Layout ---------- */
+
+.page {
+	max-width: 68rem;
+	margin: 0 auto;
+	padding: 2rem 1.25rem 4rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	align-items: start;
+}
+
+@media (min-width: 62rem) {
+	.page {
+		grid-template-columns: 15rem minmax(0, var(--max-width));
+		justify-content: center;
+	}
+}
+
+/* ---------- Navigation ---------- */
+
+.site-nav {
+	background: var(--paper-dim);
+	border: 1px solid var(--rule);
+	border-radius: 0.4rem;
+}
+
+.site-nav > summary {
+	cursor: pointer;
+	list-style: none;
+	padding: 0.85rem 1.1rem;
+	font-family: "Playfair Display", Georgia, serif;
+	font-weight: 600;
+	color: var(--curtain);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.site-nav > summary::-webkit-details-marker {
+	display: none;
+}
+
+.site-nav > summary::after {
+	content: "▾";
+	color: var(--ink-soft);
+}
+
+.site-nav[open] > summary::after {
+	content: "▴";
+}
+
+.nav-list, .nav-list ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-list {
+	padding: 0.25rem 1.1rem 1rem;
+}
+
+.nav-list ul {
+	padding-left: 1rem;
+	border-left: 1px dotted var(--rule);
+	margin: 0.2rem 0 0.5rem;
+}
+
+.nav-list a {
+	display: block;
+	padding: 0.28rem 0;
+	color: var(--ink);
+	text-decoration: none;
+	font-size: 0.96rem;
+	border-bottom: 1px solid transparent;
+}
+
+.nav-list a:hover, .nav-list a:focus {
+	color: var(--curtain);
+	border-bottom-color: var(--curtain);
+}
+
+.nav-list a[aria-current="page"] {
+	color: var(--curtain);
+	font-weight: 600;
+}
+
+@media (min-width: 62rem) {
+	.site-nav > summary {
+		display: none;
+	}
+
+	.site-nav {
+		position: sticky;
+		top: 1.5rem;
+	}
+}
+
+/* ---------- Article content ---------- */
+
+.content {
+	background: var(--paper);
+	border: 1px solid var(--rule);
+	border-radius: 0.4rem;
+	padding: 2rem clamp(1.25rem, 4vw, 3rem);
+	min-width: 0;
+}
+
+.content-title {
+	margin: 0 0 1.4rem;
+	padding-bottom: 0.9rem;
+	border-bottom: 2px solid var(--gold);
+	font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+	color: var(--curtain);
+}
+
+.content > p,
+.content > blockquote,
+.content > figure,
+.content > details {
+	margin: 0 0 1.2rem;
+}
+
+.content h2 {
+	color: var(--curtain);
+	margin-top: 2.2rem;
+	font-size: 1.35rem;
+}
+
+.content blockquote {
+	margin-inline: 0;
+	padding: 0.9rem 1.25rem;
+	border-left: 3px solid var(--gold);
+	background: var(--paper-dim);
+	font-style: italic;
+	color: var(--ink-soft);
+}
+
+.content blockquote p {
+	margin: 0 0 0.7rem;
+}
+
+.content blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+.byline {
+	color: var(--ink-soft);
+	font-style: italic;
+	font-size: 0.95rem;
+}
+
+figure.photo {
+	text-align: center;
+	margin-inline: 0;
+}
+
+figure.photo img {
+	border: 1px solid var(--rule);
+	background: #fff;
+	padding: 6px;
+	max-height: 34rem;
+	width: auto;
+}
+
+figure.photo figcaption {
+	margin-top: 0.5rem;
+	font-size: 0.9rem;
+	color: var(--ink-soft);
+	font-style: italic;
+}
+
+.content details {
+	border: 1px dashed var(--rule);
+	border-radius: 0.3rem;
+	padding: 0.5rem 0.9rem;
+	background: var(--paper-dim);
+}
+
+.content details summary {
+	cursor: pointer;
+	font-size: 0.85rem;
+	color: var(--ink-soft);
+	font-family: "Source Serif 4", Georgia, serif;
+}
+
+.content details p {
+	font-size: 0.9rem;
+	color: var(--ink-soft);
+	white-space: pre-line;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+	max-width: 68rem;
+	margin: 0 auto;
+	padding: 0 1.25rem 3rem;
+	text-align: center;
+	color: var(--gold-soft);
+	font-size: 0.85rem;
+}
+
+.site-footer a {
+	color: var(--gold-soft);
+}
+
+.site-footer a:hover, .site-footer a:focus {
+	color: #fff;
+}
+
+.site-footer img {
+	height: 20px;
+	vertical-align: text-bottom;
+	margin-left: 3px;
+}
+
+.site-footer p {
+	margin: 0.4rem 0;
+}
