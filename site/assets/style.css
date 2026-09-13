@@ -280,7 +280,6 @@ figure.photo img {
 	background: #fff;
 	padding: 6px;
 	width: auto;
-	cursor: zoom-in;
 }
 
 figure.photo figcaption {
@@ -288,63 +287,6 @@ figure.photo figcaption {
 	font-size: 0.9rem;
 	color: var(--ink-soft);
 	font-style: italic;
-}
-
-/* ---------- Lightbox (click a photo to zoom) ---------- */
-
-dialog.lightbox {
-	position: fixed;
-	inset: 0;
-	margin: auto;
-	border: none;
-	padding: 0;
-	max-width: 94vw;
-	max-height: 94vh;
-	background: transparent;
-	overflow: visible;
-}
-
-dialog.lightbox::backdrop {
-	background: rgba(22, 17, 15, 0.88);
-}
-
-dialog.lightbox img {
-	display: block;
-	max-width: 94vw;
-	max-height: 86vh;
-	width: auto;
-	height: auto;
-	border: 1px solid var(--rule);
-	background: #fff;
-	padding: 6px;
-	cursor: default;
-}
-
-dialog.lightbox .lightbox-caption {
-	margin: 0.7rem 0 0;
-	color: var(--paper);
-	text-align: center;
-	font-size: 0.9rem;
-	font-style: italic;
-}
-
-dialog.lightbox .lightbox-close {
-	position: absolute;
-	top: -0.9rem;
-	right: -0.9rem;
-	width: 2.2rem;
-	height: 2.2rem;
-	border-radius: 50%;
-	border: 2px solid var(--gold);
-	background: var(--stage);
-	color: var(--gold-soft);
-	font-size: 1.3rem;
-	line-height: 1;
-	cursor: pointer;
-}
-
-dialog.lightbox .lightbox-close:hover {
-	color: #fff;
 }
 
 .link-index {
