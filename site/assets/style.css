@@ -39,7 +39,7 @@ body {
 	line-height: 1.65;
 }
 
-h1, h2, h3, .kicker, .nav-list a {
+h1, h2, h3, .nav-list a {
 	font-family: "Playfair Display", Georgia, serif;
 }
 
@@ -98,21 +98,12 @@ img {
 }
 
 .site-logo img {
-	width: 108px;
-	height: 108px;
+	width: 160px;
+	height: 160px;
 	object-fit: cover;
 	border-radius: 50%;
-	border: 3px solid var(--gold);
+	border: 4px solid var(--gold);
 	box-shadow: 0 0 0 5px var(--stage), 0 0 0 6px var(--stage-edge);
-}
-
-.kicker {
-	margin: 0;
-	color: var(--gold-soft);
-	text-transform: uppercase;
-	letter-spacing: 0.22em;
-	font-size: 0.72rem;
-	font-weight: 600;
 }
 
 .site-title {
