@@ -290,6 +290,68 @@ figure.photo figcaption {
 	font-style: italic;
 }
 
+.link-index {
+	list-style: none;
+	margin: 0 0 1.4rem;
+	padding: 0;
+	display: grid;
+	gap: 0.9rem;
+}
+
+.link-index li {
+	border: 1px solid var(--rule);
+	border-radius: 0.3rem;
+	background: var(--paper-dim);
+}
+
+.link-index a {
+	display: block;
+	padding: 0.8rem 1.1rem;
+	text-decoration: none;
+	color: var(--curtain);
+	font-weight: 600;
+}
+
+.link-index a:hover, .link-index a:focus {
+	color: var(--curtain-bright);
+}
+
+.link-index .date-range {
+	display: block;
+	margin-top: 0.15rem;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 0.9rem;
+	color: var(--ink-soft);
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+	gap: 1.5rem 1.2rem;
+	margin: 0 0 1.4rem;
+	padding: 0;
+	list-style: none;
+}
+
+.gallery > li {
+	margin: 0;
+}
+
+.gallery figure.photo {
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery figure.photo img {
+	max-height: none;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
 .content details {
 	border: 1px dashed var(--rule);
 	border-radius: 0.3rem;
